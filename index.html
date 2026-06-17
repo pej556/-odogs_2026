@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오독스(26)</title>
+
+
+    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+
+    <!--폰트연결-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+    <!--웹아이콘 연결-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <!--스와이퍼 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <p>
+                    <a href="#">
+                        <img src="img/logo.png" alt="로고">
+                    </a>
+                </p>
+            </div><!--//logo-->
+
+            <nav class="gnb">
+                <ul>
+                    <li class="mont"><a href="#">ALL ITEMS</a>
+                        <ul class="sub">
+                            <li><a href="sub02/index.html">육포</a></li>
+                            <li><a href="sub02/index.html">트릿</a></li>
+                            <li><a href="sub02/index.html">츄르/껌</a></li>
+                            <li><a href="sub02/index.html">피자</a></li>
+                            <li><a href="sub02/index.html">쿠키</a></li>
+                            <li><a href="sub02/index.html#">케이크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="mont"><a href="sub01/index.html">BEST</a></li>
+
+                    <li class="mont"><a href="sub02/index.html">NEW</a></li>
+
+                    <li class="mont"><a href="sub02/index.html">REVIEWS</a></li>
+
+                    <li class="mont"><a href="sub02/index.html">CS</a>
+                        <ul class="sub">
+                            <li><a href="sub02/index.html">고객센터</a></li>
+                            <li><a href="sub02/index.html">공지사항</a></li>
+                            <li class="mont"><a href="sub02/index.html">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!--//gnb-->
+
+            <div class="tab_gnb">
+                <ul>
+                    <li class="mont"><a href="sub02/index.html">ALL ITEMS</a>
+                        <ul class="tab_sub">
+                            <li><a href="sub02/index.html">육포</a></li>
+                            <li><a href="sub02/index.html">트릿</a></li>
+                            <li><a href="sub02/index.html">츄르/껌</a></li>
+                            <li><a href="sub02/index.html">피자</a></li>
+                            <li><a href="sub02/index.html">쿠키</a></li>
+                            <li><a href="sub02/index.html">케이크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="mont"><a href="sub01/index.html">BEST</a></li>
+                    <li class="mont"><a href="sub02/index.html">NEW</a></li>
+                    <li class="mont"><a href="sub02/index.html">REVIEWS</a></li>
+                    <li class="mont"><a href="sub02/index.html">CS</a>
+                        <ul class="sub">
+                            <li><a href="sub02/index.html">고객센터</a></li>
+                            <li><a href="sub02/index.html">공지사항</a></li>
+                            <li><a href="sub02/index.html">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--//tab_gnb-->
+
+
+            <!--태블릿 크기-->
+            <div class="tab_menu">
+                <div class="tab_menu_gnb">
+                    <ul>
+                        <li class="pp"><a href="#"><i class="fi fi-rr-search"></i></a></li>
+                        <li><a href="#"><i class="fi fi-rr-user"></i></a></li>
+                        <li><a href="#"><i class="fi fi-rr-shopping-cart"></i></a></li>
+                        <li><button class="tab_btn"><i class="fi fi-rr-menu-burger"></i></button></li>
+                    </ul>
+                </div>
+            </div><!--//tab_menu-->
+
+            <div class="tab_menu_bar">
+                <ul>
+                    <li class="mont"><a href="sub02/index.html">ALL ITEMS
+                        <span>+</span></a>
+                        <ul class="tab_sub">
+                            <li><a href="sub02/index.html">육포</a></li>
+                            <li><a href="sub02/index.html">트릿</a></li>
+                            <li><a href="sub02/index.html">츄르/껌</a></li>
+                            <li><a href="sub02/index.html">피자</a></li>
+                            <li><a href="sub02/index.html">쿠키</a></li>
+                            <li><a href="sub02/index.html">케이크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="mont"><a href="sub01/index.html">BEST</a></li>
+                    <li class="mont"><a href="sub02/index.html">NEW</a></li>
+                    <li class="mont"><a href="sub02/index.html">REVIEWS</a></li>
+                    <li class="mont"><a href="sub02/index.html">CS
+                        <span>+</span></a>
+                        <ul class="tab_sub">
+                            <li><a href="sub02/index.html">고객센터</a></li>
+                            <li><a href="sub02/index.html">공지사항</a></li>
+                            <li><a href="sub02/index.html">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--//tab_menu_bar-->
+
+
+            <div class="header_menu">
+                <ul>
+                    <li class="pp"><a href="#"><i class="fi fi-rr-search"></i></a></li>
+                    <li><a href="#"><i class="fi fi-rr-user"></i></a></li>
+                    <li><a href="#"><i class="fi fi-rr-shopping-cart"></i></a></li>
+                </ul>
+            </div><!--//header_menu-->
+        </div><!--//inner-->
+
+        <div class="search_box">
+            <div class="inner">
+                <p class="close"><a href="#"><i class="fi fi-br-cross"></i></a></p>
+                <div class="cont">
+                    <form action="">
+                          <input type="text" placeholder="검색어를 입력하세요">
+                    </form>
+
+                    <div class="keyword">
+                        <h3>추천검색어</h3>
+                        <ul>
+                            <li><a href="sub01/index.html">#치킨트릿</a></li>
+                            <li><a href="sub01/index.html">#오리목뼈</a></li>
+                            <li><a href="sub01/index.html">#기념케이크</a></li>
+                            <li><a href="sub01/index.html">#강아지츄르</a></li>
+                            <li><a href="sub01/index.html">#강아지껌</a></li>
+                        </ul>
+                    </div><!--//keyword-->
+                </div><!--//cont-->
+            </div><!--//inner-->
+        </div><!--//search_box-->
+    </header>
+
+    <main>
+        <section class="main_view">
+            <ul class="pc_main_view">
+                <li class="p1">
+                    <a href="#">
+                        <img src="img/main_view01.jpg" alt="야채맛 트릿 3종">
+                    </a>
+                </li>
+
+                <li class="p2">
+                    <a href="#">
+                        <img src="img/main_view02.jpg" alt="덴탈껌">
+                    </a>
+                </li>
+
+                 <li class="p3">
+                    <a href="#">
+                        <img src="img/main_view03.jpg" alt="당근케이크">
+                    </a>
+                </li>
+
+                 <li class="p4">
+                    <a href="#">
+                        <img src="img/main_view04.jpg" alt="리뷰작성이벤트">
+                    </a>
+                </li>
+            </ul>
+
+            
+            <div class="tab_main_view">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/tab_main_view1.jpg" alt="당근케이크">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/tab_main_view2.jpg" alt="덴탈검">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/tab_main_view3.jpg" alt="당근케이크">
+                        </a>
+                    </li>
+
+                     <li>
+                        <a href="#">
+                            <img src="img/tab_main_view4.jpg" alt="리뷰혜택서비스">
+                        </a>
+                    </li>
+                </ul>
+            </div><!--//tab_main_view-->
+         
+
+             <div class="main_view_btn">
+                <div class="view_prev"><button><i class="fi fi-rr-angle-small-left"></i></button></div>
+                <div class="view_next"><button><i class="fi fi-rr-angle-small-right"></i></button></div>
+            </div><!--//main_view_btn-->
+        </section><!--//main_view-->
+
+
+        <section class="best">
+            <div class="inner">
+                <h1 class="mont">#BEST</h1>
+                <h3>#ODOGS의 베스트 상품</h3>
+                
+
+                <div class="best_box">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best01.jpg" alt="멍냠트릿 닭고기맛 60g">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>멍냠트릿 닭고기맛 60g</p>
+                                    <span>닭고기결이 그대로 살아있는 트릿</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">11,000원</th>
+                                            <td class="mont">13,000원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best02.jpg" alt="연어트릿">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>멍냠트릿 연어맛 60g</p>
+                                    <span>고소한 연어로 더하는 활력</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">11,000원</th>
+                                            <td class="mont">13,000원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best002.jpg" alt="당근케이크">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>건강당근 파운드케이크</p>
+                                    <span>귀여운 당근과 부드러운 크림을 함께 먹는 케이크</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">25,500원</th>
+                                            <td class="mont">27,500원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best001.jpg" alt="치킨트릿">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>멍냠트릿 닭고기맛 대용량 200g</p>
+                                    <span>닭고기맛 트릿을 좀 더 많은 양으로</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">15,000원</th>
+                                            <td class="mont">18,000원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best07.jpg" alt="토마토트릿">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>멍냠트릿 토마토맛 60g</p>
+                                    <span>장 건강, 피부 컨디션. 빠짐없는 토마토</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">11,000원</th>
+                                            <td class="mont">13,000원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best05.jpg" alt="치킨트릿">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>멍냠트릿 시금치맛 60g</p>
+                                    <span>면역력 증진, 칼슘 섭취엔 시금치</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">11,000원</th>
+                                            <td class="mont">13,000원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best003.jpg" alt="블루베리케이크">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>블루베리 가든케이크</p>
+                                    <span>부드러운 시트, 달콤상큼 블루베리</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">25,500원</th>
+                                            <td class="mont">27,500원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best004.jpg" alt="고구마쿠키">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>달콤고구마 칩쿠키</p>
+                                    <span>고구마모양의 달콤바삭 쿠키</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">5,000원</th>
+                                            <td class="mont">6,000원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best09.jpg" alt="오리목뼈">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>오리목뼈 110g</p>
+                                    <span>맛있게, 쫄깃하게 씹는 맛</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">10,000원</th>
+                                            <td class="mont">11,000원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best04.jpg" alt="덴탈껌">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>뽀드츄 덴탈껌 170g 14개입</p>
+                                    <span>톱니모양 덴탈껌으로 스트레스 걱정없이 양치하기</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">8,700원</th>
+                                            <td class="mont">11,300원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best10.jpg" alt="말랑단호박스틱">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>말랑 단호박 스틱</p>
+                                    <span>부드럽고 말랑한 단호박을 간단하게</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">6,300원</th>
+                                            <td class="mont">9,000원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/best08.jpg" alt="고구마트릿">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>멍냠트릿 고구마맛 60g</p>
+                                    <span>배설활동 증진, 달콤부드러움 고구마</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">11,000원</th>
+                                            <td class="mont">13,000원</td>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--//best_box-->
+
+                <div class="best_btn">
+                    <button class="mont"><a href="sub01/index.html">상품 더보기</a></button>
+                </div><!--//best_btn-->
+                
+
+                 
+            </div><!--//inner-->
+        </section><!--//best-->
+
+
+        <section class="review"> 
+            <div class="inner">
+                <h1 class="mont">#ODOGS REVIEWS</h1>
+                <h3>#ODOGS 고객님들이 남겨주신 진짜 후기들</h3>
+
+            <div class="re_box swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="img/best003.jpg" alt="블루베리 가든케이크">
+                                <div class="re_txt">
+                                    <h2>생일케이크용으로 딱이에요. 블루베리 맛이라 너무 좋아해요ㅋ</h2>
+                                    <span>생일케이크용으로 딱이에요. 블루베리 맛이라 너무 좋아해요ㅋ</span>
+                                    <p class="nick">lovelovepuppy</p>
+                                </div><!--//re_txt-->
+                                <div class="img">
+                                    <img src="img/best003.jpg" alt="블루베리 가든케이크">
+                                    <p>블루베리 가든케이크</p>
+                                </div><!--img-->
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="img/best10.jpg" alt="말랑 단호박 스틱">
+                                <div class="re_txt">
+                                    <h2>생각보다 손에 안묻더라구요! 단호박이라 손에 좀 묻을 줄 알았는데</h2>
+                                    <span>생각보다 손에 안묻더라구요! 단호박이라 손에 좀 묻을 줄 알았는데 적당히 손으로 집을만하고 가나디도 너무 좋아합니다~~</span>
+                                    <p class="nick">둥근면봉</p>
+                                </div><!--//re_txt-->
+                                <div class="img">
+                                    <img src="img/best10.jpg" alt="말랑 단호박 스틱">
+                                    <p>말랑 단호박 스틱</p>
+                                </div><!--img-->
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="img/best01.jpg" alt="멍냠트릿 닭고기맛">
+                                <div class="re_txt">
+                                    <h2>닭고기맛을 제일 좋아하는 것 같습니다</h2>
+                                    <span>닭고기맛을 제일 좋아하는 것 같습니다. 또 살 것 같네요.</span>
+                                    <p class="nick">설탕 맛나는 달</p>
+                                </div><!--//re_txt-->
+                                <div class="img">
+                                    <img src="img/best01.jpg" alt="멍냠트릿 닭고기맛">
+                                    <p>멍냠트릿 닭고기맛 60g</p>
+                                </div><!--img-->
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="img/best002.jpg" alt="당근케이크">
+                                <div class="re_txt">
+                                    <h2>강아지가 많이 좋아하네요.</h2>
+                                    <span>강아지가 많이 좋아하네요.</span>
+                                    <p class="nick">반려라이프</p>
+                                </div><!--//re_txt-->
+                                <div class="img">
+                                    <img src="img/best002.jpg" alt="당근케이크">
+                                    <p>건강당근 파운드케이크</p>
+                                </div><!--img-->
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="img/best004.jpg" alt="고구마칩쿠키">
+                                <div class="re_txt">
+                                    <h2>딱딱하지도 않고 바삭하게 잘먹네요</h2>
+                                    <span>딱딱하지도 않고 바삭하게 잘먹네요 고구마맛이라서 하나 사봤는데 생각보다 괜찮았어요</span>
+                                    <p class="nick">강아지 좋아</p>
+                                </div><!--//re_txt-->
+                                <div class="img">
+                                    <img src="img/best004.jpg" alt="고구마칩쿠키">
+                                    <p>달콤고구마 칩쿠키</p>
+                                </div><!--img-->
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="img/best08.jpg" alt="멍냠트릿 고구마맛">
+                                <div class="re_txt">
+                                    <h2>고구마를 좋아해서 하나 샀습니다</h2>
+                                    <span>고구마를 좋아해서 하나 샀습니다</span>
+                                    <p class="nick">둥근면봉</p>
+                                </div><!--//re_txt-->
+                                <div class="img">
+                                    <img src="img/best08.jpg" alt="멍냠트릿 고구마맛">
+                                    <p>동결건조 치킨트릿 100g</p>
+                                </div><!--img-->
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="img/best001.jpg" alt="멍냠트릿 닭가슴살 대용량">
+                                <div class="re_txt">
+                                    <h2>강아지가 치킨트릿을 넘 좋아해서 대용량 구매 결정!</h2>
+                                    <span>강아지가 치킨트릿을 넘 좋아해서 대용량 구매 결정! 생각보다 더 많이 들어있어요</span>
+                                    <p class="nick">둥근면봉</p>
+                                </div><!--//re_txt-->
+                                <div class="img">
+                                    <img src="img/best001.jpg" alt="멍냠트릿 닭가슴살 대용량">
+                                    <p>멍냠트릿 닭고기맛 대용량 200g</p>
+                                </div><!--img-->
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--//re_box-->
+
+                <div class="btn">
+                    <button class="prev"><i class="fi fi-rr-angle-small-left"></i></button>
+                    <button class="next"><i class="fi fi-rr-angle-small-right"></i></button>
+                </div>
+                 </div><!--//inner-->
+
+                <div class="re_btn">
+                    <button class="mont"><a href="#">리뷰 더보기</a></button>
+                </div><!--//best_btn-->
+        </section><!--//review-->
+
+
+        <section class="new">
+            <div class="inner">
+                <h1 class="mont">#NEW ARRIVAL</h1>
+                <h3>새로운 간식이 나왔어요!</h3>
+
+
+                <div class="new_banner">
+                    <a href="#">
+                        <img src="img/new_banner.jpg" alt="신상품배너">
+                    </a>
+                </div><!--//new_banner-->
+
+                <div class="new_banner_tap">
+                    <a href="#">
+                        <img src="img/new_banner_tap.jpg" alt="피자 4종 이미지">
+                    </a>
+                </div>
+
+                <div class="new_item">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/new01.jpg" alt="치킨트릿">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>소고기 시금치 피자</p>
+                                    <span>맛있는 스테이크에 신선한 시금치 조합</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">18,500원</th>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/new02.jpg" alt="고구마피자">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>고구마 피자</p>
+                                    <span>자꾸 생각나는 달콤한 고구마의 매력</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">15,000원</th>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/new03.jpg" alt="치킨트릿">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>단호박 샐러드 피자</p>
+                                    <span>달달 단호박위로 올라간 당근, 브로콜리</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">16,000원</th>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/new04.jpg" alt="치킨트릿">
+                                </div>
+                                
+                                <div class="txt_box">
+                                    <p>닭가슴살 양배추맛 피자</p>
+                                    <span>부담없이 즐기는 닭고기+양배추피자</span>
+
+                                    <table>
+                                        <tr>
+                                            <th class="mont">12,500원</th>
+                                        </tr>
+                                    </table>
+                                </div><!--//txt_box-->
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--//new_item-->
+            </div><!--//inner-->
+
+            <div class="new_btn">
+                    <button class="mont"><a href="#">신제품 더보기</a></button>
+                </div><!--//best_btn-->
+        </section><!--//new-->
+
+
+        <section class="banner">
+            <p class="banner_pc"><a href="#"><img src="img/banner.jpg" alt="회원가입 유도 배너"></a></p>
+
+            <p class="banner_tap"><a href="#"><img src="img/banner_tap.jpg" alt="회원가입 유도 배너"></a></p>
+        </section><!--//banner-->
+
+
+        <section class="event">
+            <div class="inner">
+                <ul>
+                    <li><a href="#"><img src="img/event01.jpg" alt="팔로우 이벤트"></a></li>
+                    <li><a href="#"><img src="img/event02.jpg" alt="무료배송"></a></li>
+                </ul>
+            </div>
+        </section><!--//event-->
+
+
+       <section class="notice">
+            <div class="inner">
+                <div class="notice_title">
+                    <h3 class="mont">#ODOGS NOTICE</h3>
+                </div><!--//notice_title-->
+
+                <div class="notice_txt swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <span>[배송안내]샵오독스 추석배송 안내</span>
+                                <p class="pre">2025-09-25</p>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <span>[이벤트]샵오독스 인스타그램 팔로우 이벤트</span>
+                                <p>2026-01-08</p>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <span>[결제안내]결제오류 개선 안내</span>
+                                <p>2026-02-25</p>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <span>[배송안내]2026 설날 배송안내</span>
+                                <p>2026-02-14</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--//notice_txt-->
+
+                <div class="notice_btn">
+                    <div class="swiper-button-prev prev"><i class="fi fi-rr-angle-small-up"></i></div>
+                    <div class="swiper-button-next next"><i class="fi fi-rr-angle-small-down"></i></div>
+                </div><!--//notice_btn-->
+
+                <div class="notice_btn_add"><a href="#">+</a></div>
+            </div>
+       </section><!--end:notice-->
+
+
+       <section class="top">
+            <button><a href="#"><i class="fi fi-rr-angle-double-small-up"></i></a></button>
+       </section><!--end:top-->
+    </main>
+
+    <footer>
+        <div class="inner">
+            <div class="con">
+                <div class="footer_info">
+                    <ul>
+                        <li class="f_logo"><a href="#"><img src="img/logo.png" alt="로고"></a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+
+                    <span>상호명 : 샵오독스 ㅣ 대표 : 김라라 ㅣ 메일  : abc@gamilcom ㅣ 대표번호 : 000-000-0000
+                    서울시 강남구 테헤란로 라라빌딩 ㅣ 팩스번호 : 000-000-0000 ㅣ 사업자등록번호 : 000-00-0000</span>
+                    <p>COPYRIGHT © #ODOGS. ALL RIGHTS RESERVED.</p>
+                </div><!--end:footer_info-->
+
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><i class="fi fi-brands-instagram"></i></a></li>
+                        <li><a href="#"><i class="fi fi-brands-youtube"></i></a></li>
+                        <li><a href="#"><i class="fi fi-brands-facebook"></i></a></li>
+                    </ul>
+                </div><!--//sns-->
+            </div><!--//con-->
+        </div><!--//inner-->
+    </footer>
+
+    <!--외부 스크립트(플러그인) 연결-->
+    <script src="js/ScrollGiveClass.js"></script>
+    <script src="js/EzenScroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/jquery-1.12.3.js"></script>
+
+    <!--플러그인 호출-->
+    <script src="js/script.js"></script>
+    <script src="js/j.js"></script>
+</body>
+</html>
